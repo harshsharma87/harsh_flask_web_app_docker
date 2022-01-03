@@ -26,8 +26,8 @@ Don’t forget to put “dot operator” at the end as it specifies the current 
 Next step is to containerized this image and run it, you have to execute the below command:
   $ docker run -d -p  --name [container name]  [image ID or name]
   
--d : Runs the container in background and print container ID.
--p : By this you can publish the container's port to the local machine. I’ve used port 8081 - this will allow us to go to http://localhost:8081 on our machine & view the container’s response on that same port.
+-d : Runs the container in background and print container ID; 
+-p : By this you can publish the container's port to the local machine. I’ve used port 8081 - this will allow us to go to http://localhost:8081 on our machine & view the container’s response on that same port; 
 --name : Assign a name to the container.
 
 Note: 8081:8081 = Host Machine Port : Container Port. (you can use any random port). Also 0.0.0.0 means local host machine. To see the port binding between the host machine and the container, you can run command:  $ docker inspect [Container name or ID]
